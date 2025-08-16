@@ -6,6 +6,11 @@
 /out-tsc
 /bazel-out
 
+src/assets
+
+src/environments/environment.prod.ts
+src/environments/environment.ts
+
 # Node
 /node_modules
 npm-debug.log
@@ -29,7 +34,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
+/.angular/
 .sass-cache/
 /connect.lock
 /coverage
@@ -40,3 +45,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+package-lock.json
