@@ -44,25 +44,16 @@ export class SpotifyService {
 
   constructor(private http: HttpClient) {}
 
-  BASE_URL = 'http://ws.audioscrobbler.com/2.0';
+  BASE_URL = environment.backendUrl;
 
   getRecentTracks(limit: number = 15): Observable<Track[]> {
     const clampedLimit = Math.max(1, Math.min(limit, 100));
 
-    const url = `${this.BASE_URL}/?method=user.getrecenttracks&user=${environment.lastFmUser}&api_key=${environment.lastFmApiKey}&format=json&limit=${clampedLimit}`;
+    const url = `${this.BASE_URL}/lastfm/tracks?limit=${clampedLimit}`;
 
-    return this.http.get<LastFmResponse>(url).pipe(
+    return this.http.get<Track[]>(url).pipe(
       map(response => {
-        const tracks = response.recenttracks.track;
-
-        // Handle current playing track
-        const maybeCurrent = tracks[0];
-        const isCurrent = Boolean(maybeCurrent?.["@attr"]?.nowplaying);
-        if (isCurrent) {
-          maybeCurrent.date = { uts: "0" };
-        }
-
-        return tracks.slice(0, clampedLimit);
+        return response;
       })
     );
   }

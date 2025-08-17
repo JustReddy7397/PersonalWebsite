@@ -1,5 +1,4 @@
 export const environment = {
   production: false,
-  lastFmUser: "exampleUser",
-  lastFmApiKey: "exampleApiKey",
+  backendUrl: 'http://localhost:3000/api',
 };
