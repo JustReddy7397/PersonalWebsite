@@ -29,6 +29,7 @@
     "@angular/forms": "^20.1.0",
     "@angular/platform-browser": "^20.1.0",
     "@angular/router": "^20.1.0",
+    "@ngx-env/builder": "^20.1.1",
     "@types/dotenv": "^6.1.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
