@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {map, Observable} from 'rxjs';
-import { environment} from '../../environments/environment';
 
 export type Track = {
   mbid: string
@@ -44,7 +43,7 @@ export class SpotifyService {
 
   constructor(private http: HttpClient) {}
 
-  BASE_URL = environment.backendUrl;
+  BASE_URL = "http://198.186.130.147:2239/";
 
   getRecentTracks(limit: number = 15): Observable<Track[]> {
     const clampedLimit = Math.max(1, Math.min(limit, 100));
