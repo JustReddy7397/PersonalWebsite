@@ -45,7 +45,7 @@ export class SpotifyService {
 
   constructor(private http: HttpClient) {}
 
-  BASE_URL = "http://ws.audioscrobbler.com/2.0";
+  BASE_URL = "https://ws.audioscrobbler.com/2.0";
 
   getRecentTracks(limit: number = 15): Observable<Track[]> {
     const clampedLimit = Math.max(1, Math.min(limit, 100));
