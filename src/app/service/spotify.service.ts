@@ -43,12 +43,11 @@ export class SpotifyService {
 
   constructor(private http: HttpClient) {}
 
-  BASE_URL = "http://198.186.130.147:2239/api";
 
   getRecentTracks(limit: number = 15): Observable<Track[]> {
     const clampedLimit = Math.max(1, Math.min(limit, 100));
 
-    const url = `${this.BASE_URL}/lastfm/tracks?limit=${clampedLimit}`;
+    const url = `/lastfm/tracks?limit=${clampedLimit}`;
 
     return this.http.get<Track[]>(url).pipe(
       map(response => {
