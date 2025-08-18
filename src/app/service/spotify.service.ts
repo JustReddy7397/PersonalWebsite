@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {map, Observable} from 'rxjs';
+import * as dotenv from 'dotenv';
 
 export type Track = {
   mbid: string
@@ -43,12 +44,12 @@ export class SpotifyService {
 
   constructor(private http: HttpClient) {}
 
-  BASE_URL = "https://198.186.130.147:2239/api";
+  BASE_URL = "http://ws.audioscrobbler.com/2.0";
 
   getRecentTracks(limit: number = 15): Observable<Track[]> {
     const clampedLimit = Math.max(1, Math.min(limit, 100));
 
-    const url = `${this.BASE_URL}/lastfm/tracks?limit=${clampedLimit}`;
+    const url = `${this.BASE_URL}/?method=user.getrecenttracks&user=${process.env['LAST_FM_USER']}&api_key=${process.env['LAST_FM_API']}&format=json&limit=${clampedLimit}`;
 
     return this.http.get<Track[]>(url).pipe(
       map(response => {
