@@ -48,7 +48,7 @@ export class SpotifyService {
   getRecentTracks(limit: number = 15): Observable<Track[]> {
     const clampedLimit = Math.max(1, Math.min(limit, 100));
 
-    const url = `/lastfm/tracks?limit=${clampedLimit}`;
+    const url = `${this.BASE_URL}/lastfm/tracks?limit=${clampedLimit}`;
 
     return this.http.get<Track[]>(url).pipe(
       map(response => {
