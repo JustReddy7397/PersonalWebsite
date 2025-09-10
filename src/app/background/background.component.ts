@@ -260,14 +260,14 @@ export class BackgroundComponent {
 
   protected readonly experiences = [
     {
-      name: "Moonvive Entertainment",
-      url: 'https://moonvive.com',
-      position: "Java & Backend Developer",
+      name: "Ralect",
+      url: 'https://ralect.com',
+      position: "Frontend and Backend Developer",
       duration: "12/2024 - Present",
-      description: "Contributed to the development of The Universe Minecraft server, focusing on Java and backend technologies.",
-      logoUrl: 'assets/moonvive.png',
-      technologies: 'Java, TypeScript, Redis, Sockets, MongoDB',
-      techStack: ['Java', 'TypeScript', 'Redis', 'Sockets', "MongoDB"],
+      description: "Smart Online Solutions. Developing and maintaining web applications using TypeScript, Redis, Sockets, MongoDB, and NestJS.",
+      logoUrl: 'assets/ralect.png',
+      technologies: 'TypeScript, Redis, Sockets, MongoDB, NestJS',
+      techStack: ['TypeScript', 'Redis', 'Sockets', "MongoDB", "NestJS"],
     },
     {
       name: "Ranked Network",
