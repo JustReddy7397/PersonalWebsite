@@ -79,7 +79,8 @@ import {Component, OnInit, signal} from '@angular/core';
                         {{ track.name }}
                       </h3>
                       @if (track['@attr']?.nowplaying) {
-                        <span class="px-2 py-1 text-xs bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-full animate-pulse">
+                        <span
+                          class="px-2 py-1 text-xs bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-full animate-pulse">
                       Now Playing
                     </span>
                       }
@@ -113,7 +114,8 @@ import {Component, OnInit, signal} from '@angular/core';
 
         <div class="flex justify-center mt-8">
           <div class="relative group">
-            <div class="absolute -inset-1 bg-gradient-to-r from-red-600 via-red-500 to-orange-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-red-600 via-red-500 to-orange-500 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
             <a
               href="https://www.last.fm"
               target="_blank"
@@ -121,18 +123,23 @@ import {Component, OnInit, signal} from '@angular/core';
               class="relative flex items-center gap-3 px-6 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group"
             >
               <div class="flex items-center gap-2">
-              <span class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-800 dark:group-hover:text-slate-200 transition-colors">
+              <span
+                class="text-sm font-medium text-slate-600 dark:text-slate-400 group-hover:text-slate-800 dark:group-hover:text-slate-200 transition-colors">
                 Powered by
               </span>
                 <div class="flex items-center gap-2 px-3 py-1 bg-gradient-to-r from-red-500 to-orange-500 rounded-full">
                   <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M10.584 17.21l-.88-2.392s-1.43 1.594-3.573 1.594c-1.897 0-3.244-1.649-3.244-4.288 0-3.382 1.704-4.591 3.381-4.591 2.42 0 3.189 1.567 3.849 3.574l.88 2.75c.88 2.728 2.53 4.924 7.287 4.924 3.382 0 5.67-1.018 5.67-3.711 0-2.178-1.238-2.948-3.516-3.382l-1.704-.317c-1.155-.22-1.485-.55-1.485-1.155 0-.715.55-1.129 1.463-1.129 1.012 0 1.54.385 1.623 1.293l2.255-.275c-.22-2.057-1.925-2.948-3.793-2.948-1.98 0-3.849.88-3.849 3.244 0 1.54.66 2.53 2.724 2.948l1.76.357c1.43.275 1.925.742 1.925 1.54 0 .962-.88 1.43-2.255 1.43-2.2 0-3.025-1.045-3.630-3.025l-.88-2.86C14.077 3.718 12.702 2 9.21 2 5.829 2 3 4.453 3 8.515c0 4.785 2.53 7.287 6.406 7.287 2.53 0 4.51-1.54 4.51-1.54l-.332-.052z"/>
+                    <path
+                      d="M10.584 17.21l-.88-2.392s-1.43 1.594-3.573 1.594c-1.897 0-3.244-1.649-3.244-4.288 0-3.382 1.704-4.591 3.381-4.591 2.42 0 3.189 1.567 3.849 3.574l.88 2.75c.88 2.728 2.53 4.924 7.287 4.924 3.382 0 5.67-1.018 5.67-3.711 0-2.178-1.238-2.948-3.516-3.382l-1.704-.317c-1.155-.22-1.485-.55-1.485-1.155 0-.715.55-1.129 1.463-1.129 1.012 0 1.54.385 1.623 1.293l2.255-.275c-.22-2.057-1.925-2.948-3.793-2.948-1.98 0-3.849.88-3.849 3.244 0 1.54.66 2.53 2.724 2.948l1.76.357c1.43.275 1.925.742 1.925 1.54 0 .962-.88 1.43-2.255 1.43-2.2 0-3.025-1.045-3.630-3.025l-.88-2.86C14.077 3.718 12.702 2 9.21 2 5.829 2 3 4.453 3 8.515c0 4.785 2.53 7.287 6.406 7.287 2.53 0 4.51-1.54 4.51-1.54l-.332-.052z"/>
                   </svg>
                   <span class="text-white font-bold text-sm tracking-wide">Last.fm</span>
                 </div>
               </div>
-              <svg class="w-4 h-4 text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              <svg
+                class="w-4 h-4 text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors transform group-hover:translate-x-1"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
               </svg>
             </a>
           </div>
@@ -215,7 +222,8 @@ export class TracksComponent implements OnInit {
 
   readonly isTransitioning = signal(false);
 
-  constructor(private spotifyService: SpotifyService) {}
+  constructor(private spotifyService: SpotifyService) {
+  }
 
   ngOnInit(): void {
     this.loadTracks();
@@ -225,6 +233,11 @@ export class TracksComponent implements OnInit {
     this.isLoading = true;
     this.spotifyService.getRecentTracks(15).subscribe({
       next: (tracks) => {
+        const firstTrack = tracks[0];
+        const nextTrack = tracks.length > 1 ? tracks[1] : null;
+        if (firstTrack && !firstTrack['@attr']?.nowplaying && (nextTrack && firstTrack.name == nextTrack.name && firstTrack.artist == nextTrack.artist)) {
+          tracks.shift()
+        }
         this.allTracks = tracks;
         this.totalPages = Math.ceil(tracks.length / this.tracksPerPage);
         this.updateCurrentPageTracks();
@@ -284,6 +297,6 @@ export class TracksComponent implements OnInit {
   protected formatDate(timestamp: string): string {
     if (timestamp === '0') return 'Now Playing';
     const date = new Date(parseInt(timestamp) * 1000);
-    return date.toLocaleDateString() + ' at ' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    return date.toLocaleDateString() + ' at ' + date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
   }
 }
