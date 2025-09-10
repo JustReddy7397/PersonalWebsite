@@ -29,12 +29,6 @@ export type Track = {
   playcount?: string
 }
 
-type LastFmResponse = {
-  recenttracks: {
-    track: Track[]
-  }
-}
-
 /**
  * All credits go to {@link https://github.com/itswilliboy/itswilli.vue/blob/master/server/api/spotify.ts}
  */
